@@ -6,30 +6,37 @@ function createWindow() {
   let isMenuBarOpen = $state(false);
   let activeName = $state<MenuBar.Names>("Qwill");
   let activeSubmenu = $state<MenuBar.SubmenuNames | "">("");
+  let pressedKeys = $state<string[]>([]);
   let appWindow = getCurrentWindow();
 
   function minimize() {
-      appWindow.minimize();
+    appWindow.minimize();
   }
 
   function toggleMaximize() {
-      appWindow.toggleMaximize();
-      isMaximized = !isMaximized;
+    appWindow.toggleMaximize();
+    isMaximized = !isMaximized;
   }
 
   function close() {
-      appWindow.close();
+    appWindow.close();
   }
 
   return {
-    setIsMaximized: (value: boolean) => isMaximized = value,
+    setIsMaximized: (value: boolean) => (isMaximized = value),
     getIsMaximized: () => isMaximized,
-    setIsMenuBarOpen: (value: boolean) => isMenuBarOpen = value,
+    setIsMenuBarOpen: (value: boolean) => (isMenuBarOpen = value),
     getIsMenuBarOpen: () => isMenuBarOpen,
-    setActiveName: (value: MenuBar.Names) => activeName = value,
+    setActiveName: (value: MenuBar.Names) => (activeName = value),
     getActiveName: () => activeName,
-    setActiveSubmenu: (value: MenuBar.SubmenuNames | "") => activeSubmenu = value,
+    setActiveSubmenu: (value: MenuBar.SubmenuNames | "") =>
+      (activeSubmenu = value),
     getActiveSubmenu: () => activeSubmenu,
+    setPressedKeys: (value: string[]) => (pressedKeys = value),
+    updatePressedKeys: (key: string) => {
+      pressedKeys.push(key);
+    },
+    getPressedKeys: () => pressedKeys,
     getAppWindow: () => appWindow,
     minimize,
     toggleMaximize,

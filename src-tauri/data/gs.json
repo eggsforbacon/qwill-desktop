@@ -1,0 +1,229 @@
+{
+  "shortcuts": [
+    {
+      "command": "editor_settings",
+      "name": "Editor Settings",
+      "keys": ["Ctrl", "Alt", "Shift", "S"],
+      "label": "Ctrl + Alt + Shift + S",
+      "mutable": false
+    },
+    {
+      "command": "language_properties",
+      "name": "Language Properties",
+      "keys": ["Ctrl", "Alt", "Shift", "P"],
+      "label": "Ctrl + Alt + Shift + P",
+      "mutable": false
+    },
+    {
+      "command": "keyboard_shortcuts",
+      "name": "Keyboard Shortcuts",
+      "keys": ["Ctrl", "Alt", "Shift", "K"],
+      "label": "Ctrl + Alt + Shift + K",
+      "mutable": true
+    },
+    {
+      "command": "close_qwill",
+      "name": "Close Qwill",
+      "keys": ["Ctrl", "Q"],
+      "label": "Ctrl + Q",
+      "mutable": true
+    },
+    {
+      "command": "new",
+      "name": "New",
+      "keys": ["Ctrl", "N"],
+      "label": "Ctrl + N",
+      "mutable": true
+    },
+    {
+      "command": "open",
+      "name": "Open",
+      "keys": ["Ctrl", "O"],
+      "label": "Ctrl + O",
+      "mutable": true
+    },
+    {
+      "command": "open_recent",
+      "name": "Open Recent",
+      "keys": ["Ctrl", "Shift", "O"],
+      "label": "Ctrl + Shift + O",
+      "mutable": true
+    },
+    {
+      "command": "save",
+      "name": "Save",
+      "keys": ["Ctrl", "S"],
+      "label": "Ctrl + S",
+      "mutable": true
+    },
+    {
+      "command": "save_as",
+      "name": "Save As",
+      "keys": ["Ctrl", "Shift", "S"],
+      "label": "Ctrl + Shift + S",
+      "mutable": true
+    },
+    {
+      "command": "close_tab",
+      "name": "Close Tab",
+      "keys": ["Ctrl", "F4"],
+      "label": "Ctrl + F4",
+      "mutable": true
+    },
+    {
+      "command": "close_window",
+      "name": "Close Window",
+      "keys": ["Ctrl", "W"],
+      "label": "Ctrl + W",
+      "mutable": true
+    },
+    {
+      "command": "undo",
+      "name": "Undo",
+      "keys": ["Ctrl", "Z"],
+      "label": "Ctrl + Z",
+      "mutable": true
+    },
+    {
+      "command": "redo",
+      "name": "Redo",
+      "keys": ["Ctrl", "Shift", "Z"],
+      "label": "Ctrl + Shift + Z",
+      "mutable": true
+    },
+    {
+      "command": "cut",
+      "name": "Cut",
+      "keys": ["Ctrl", "X"],
+      "label": "Ctrl + X",
+      "mutable": true
+    },
+    {
+      "command": "copy",
+      "name": "Copy",
+      "keys": ["Ctrl", "C"],
+      "label": "Ctrl + C",
+      "mutable": true
+    },
+    {
+      "command": "paste",
+      "name": "Paste",
+      "keys": ["Ctrl", "V"],
+      "label": "Ctrl + V",
+      "mutable": true
+    },
+    {
+      "command": "select_all",
+      "name": "Select All",
+      "keys": ["Ctrl", "A"],
+      "label": "Ctrl + A",
+      "mutable": true
+    },
+    {
+      "command": "find",
+      "name": "Find",
+      "keys": ["Ctrl", "F"],
+      "label": "Ctrl + F",
+      "mutable": true
+    },
+    {
+      "command": "find_in_project",
+      "name": "Find in Project",
+      "keys": ["Ctrl", "Shift", "F"],
+      "label": "Ctrl + Shift + F",
+      "mutable": true
+    },
+    {
+      "command": "import_lexicon",
+      "name": "Import Lexicon",
+      "keys": ["Ctrl", "Alt", "Shift", "I"],
+      "label": "Ctrl + Alt + Shift + I",
+      "mutable": true
+    },
+    {
+      "command": "export_lexicon_as",
+      "name": "Export Lexicon As",
+      "keys": ["Ctrl", "Shift", "L"],
+      "label": "Ctrl + Shift + L",
+      "mutable": true
+    },
+    {
+      "command": "export_as",
+      "name": "Export As",
+      "keys": ["Ctrl", "Shift", "E"],
+      "label": "Ctrl + Shift + E",
+      "mutable": true
+    },
+    {
+      "command": "statistics",
+      "name": "Statistics",
+      "keys": ["Alt", "9"],
+      "label": "Alt + 9",
+      "mutable": true
+    },
+    {
+      "command": "evolution",
+      "name": "Evolution",
+      "keys": ["Alt", "8"],
+      "label": "Alt + 8",
+      "mutable": true
+    },
+    {
+      "command": "check_language",
+      "name": "Check Language",
+      "keys": ["F7"],
+      "label": "F7",
+      "mutable": true
+    },
+    {
+      "command": "auto_resize",
+      "name": "Auto Resize",
+      "keys": ["Ctrl", "Alt", "R"],
+      "label": "Ctrl + Alt + R",
+      "mutable": true
+    },
+
+    {
+      "command": "zoom_in",
+      "name": "Zoom In",
+      "keys": ["Ctrl", "+"],
+      "label": "Ctrl + +",
+      "mutable": true
+    },
+    {
+      "command": "zoom_out",
+      "name": "Zoom Out",
+      "keys": ["Ctrl", "-"],
+      "label": "Ctrl + -",
+      "mutable": true
+    },
+    {
+      "command": "reset_zoom",
+      "name": "Reset Zoom",
+      "keys": ["Ctrl", "0"],
+      "label": "Ctrl + 0",
+      "mutable": true
+    },
+    {
+      "command": "fullscreen",
+      "name": "Fullscreen",
+      "keys": ["F11"],
+      "label": "F11",
+      "mutable": true
+    },
+    {
+      "command": "documentation",
+      "name": "Documentation",
+      "keys": ["F1"],
+      "label": "F1",
+      "mutable": true
+    },
+    {
+      "command": "report_issue",
+      "name": "Report Issue",
+      "keys": ["F9"],
+      "label": "F9",
+      "mutable": true
+    }
+  ]
+}

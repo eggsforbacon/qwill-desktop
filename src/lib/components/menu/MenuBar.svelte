@@ -24,7 +24,7 @@
                     label="Language Properties"
                     shortcut="Ctrl + Alt + Shift + P"
                 />
-                <Item label="Key Bindings" shortcut="Ctrl + K  Ctrl + B" />
+                <Item label="Keyboard Bindings" shortcut="Ctrl + K  Ctrl + B" />
                 <Separator />
                 <Item label="Select Theme" />
                 <Separator />
@@ -45,7 +45,7 @@
                 <Item label="Save" shortcut="Ctrl + S" />
                 <Item label="Save As" shortcut="Ctrl + Shift + S" />
                 <Separator />
-                <Item label="Close Tab" />
+                <Item label="Close Tab" shortcut="Ctrl + F4" />
                 <Item label="Close Project" />
                 <Item label="Close Window" shortcut="Ctrl + W" />
             </NameButton>
@@ -105,7 +105,7 @@
                 <Item label="Reset Zoom" shortcut="Ctrl + 0" />
                 <Item label="Auto Resize Window" shortcut="Ctrl + Alt + R" />
                 <Item label="Font Size" value={"12pt"} />
-                <Item label="Full Screen" shortcut="F11" />
+                <Item label="Fullscreen" shortcut="F11" />
             </NameButton>
             <NameButton label="Help" mnemonic="H">
                 <Item label="Documentation" shortcut="F1" />
