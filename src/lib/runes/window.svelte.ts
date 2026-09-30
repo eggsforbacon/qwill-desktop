@@ -6,7 +6,8 @@ function createWindow() {
   let isMenuBarOpen = $state(false);
   let activeName = $state<MenuBar.Names>("Qwill");
   let activeSubmenu = $state<MenuBar.SubmenuNames | "">("");
-  let pressedKeys = $state<string[]>([]);
+  let showMnemonics = $state(false);
+  let os = $state("");
   let appWindow = getCurrentWindow();
 
   function minimize() {
@@ -32,11 +33,10 @@ function createWindow() {
     setActiveSubmenu: (value: MenuBar.SubmenuNames | "") =>
       (activeSubmenu = value),
     getActiveSubmenu: () => activeSubmenu,
-    setPressedKeys: (value: string[]) => (pressedKeys = value),
-    updatePressedKeys: (key: string) => {
-      pressedKeys.push(key);
-    },
-    getPressedKeys: () => pressedKeys,
+    setOs: (value: string) => (os = value),
+    getOs: () => os,
+    setShowMnemonics: (value: boolean) => (showMnemonics = value),
+    getShowMnemonics: () => showMnemonics,
     getAppWindow: () => appWindow,
     minimize,
     toggleMaximize,

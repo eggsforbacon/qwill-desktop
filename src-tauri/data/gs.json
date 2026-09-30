@@ -1,6 +1,13 @@
 {
   "shortcuts": [
     {
+      "command": "focus_menu_bar",
+      "name": "Focus Menu Bar",
+      "keys": ["Alt"],
+      "label": "Alt",
+      "mutable": false
+    },
+    {
       "command": "editor_settings",
       "name": "Editor Settings",
       "keys": ["Ctrl", "Alt", "Shift", "S"],

@@ -25,7 +25,7 @@ pub fn run() {
             commands::get_is_menu_bar_open,
             commands::set_registered_hotkeys,
             commands::get_registered_hotkeys,
-            commands::create_shortcut,
+            commands::get_os,
             commands::rust_info,
         ])
         .run(tauri::generate_context!())

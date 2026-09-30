@@ -18,6 +18,7 @@ export namespace Hotkeys {
   };
 
   export const ACTIONS: string[] = [
+    "focus_menu_bar",
     "editor_settings",
     "language_properties",
     "keyboard_shortcuts",

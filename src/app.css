@@ -1,40 +1,7 @@
 @import "tailwindcss";
 
 @layer base {
-    .f-backdrop-blur-sm {
-        -webkit-backdrop-filter: blur(4px);
-        backdrop-filter: blur(4px);
-    }
 
-    .f-backdrop-blur {
-        -webkit-backdrop-filter: blur(8px);
-        backdrop-filter: blur(8px);
-    }
-
-    .f-backdrop-blur-md {
-        -webkit-backdrop-filter: blur(12px);
-        backdrop-filter: blur(12px);
-    }
-
-    .f-backdrop-blur-lg {
-        -webkit-backdrop-filter: blur(16px);
-        backdrop-filter: blur(16px);
-    }
-
-    .f-backdrop-blur-xl {
-        -webkit-backdrop-filter: blur(24px);
-        backdrop-filter: blur(24px);
-    }
-
-    .f-backdrop-blur-2xl {
-        -webkit-backdrop-filter: blur(40px);
-        backdrop-filter: blur(40px);
-    }
-
-    .f-backdrop-blur-3xl {
-        -webkit-backdrop-filter: blur(64px);
-        backdrop-filter: blur(64px);
-    }
 }
 
 @layer utilities {

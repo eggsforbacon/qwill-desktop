@@ -15,7 +15,11 @@
         "title": "Qwill",
         "width": 1802,
         "height": 986,
-        "decorations": false
+        "decorations": false,
+        "transparent": true,
+        "windowEffects": {
+          "effects": ["acrylic"]
+        }
       }
     ],
     "security": {

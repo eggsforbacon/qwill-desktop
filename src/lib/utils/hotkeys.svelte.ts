@@ -1,6 +1,7 @@
 import { invoke } from "@tauri-apps/api/core";
 import type { Hotkeys } from "../types";
 import { hotkeysStore } from "$lib/runes/hotkeys.svelte";
+import { windowStore } from "$lib/runes/window.svelte";
 
 export function handleKeyDown(event: KeyboardEvent) {
   let keyName = event.key;
@@ -35,6 +36,8 @@ export function handleKeyUp(event: KeyboardEvent) {
 
 function executeAction(action: Hotkeys.Action) {
   switch (action) {
+    case "focus_menu_bar":
+      break;
     case "editor_settings":
       invoke("rust_info", { message: "editor_settings" });
       break;

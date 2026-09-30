@@ -6,10 +6,6 @@ pub struct ShortcutConfig {
 }
 
 impl ShortcutConfig {
-    pub fn new(shortcuts: Vec<Shortcut>) -> Self {
-        Self { shortcuts }
-    }
-
     pub fn get_shortcuts(&self) -> &[Shortcut] {
         &self.shortcuts
     }
@@ -24,43 +20,8 @@ pub struct Shortcut {
 }
 
 impl Shortcut {
-    pub fn new(command: String, keys: Vec<String>, label: String, mutable: bool) -> Self {
-        Self {
-            command,
-            keys,
-            label,
-            mutable,
-        }
-    }
-
     pub fn get_command(&self) -> &str {
         &self.command
-    }
-
-    pub fn get_keys(&self) -> &[String] {
-        &self.keys
-    }
-
-    pub fn reassign_keys(&mut self, keys: Vec<String>) {
-        if !self.mutable {
-            return;
-        }
-        self.keys = keys;
-    }
-
-    pub fn get_label(&self) -> &str {
-        &self.label
-    }
-
-    pub fn reassign_label(&mut self, label: String) {
-        if !self.mutable {
-            return;
-        }
-        self.label = label;
-    }
-
-    pub fn is_mutable(&self) -> bool {
-        self.mutable
     }
 }
 

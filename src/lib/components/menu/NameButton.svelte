@@ -16,7 +16,9 @@
         label
             ? 'dark:bg-neutral-700 dark:text-amber-300'
             : ''}"
-        onmouseenter={() => windowStore.setActiveName(label)}
+        onmouseenter={() => {
+            windowStore.setActiveName(label);
+        }}
         onclick={() => {
             windowStore.setIsMenuBarOpen(false);
             windowStore.setActiveName("Qwill");
@@ -27,7 +29,7 @@
     </button>
     {#if windowStore.getActiveName() === label}
         <div
-            class="flex flex-col items-stretch gap-3 isolate top-7 -left-4 absolute px-4 py-2 rounded-xl shadow-lg backdrop-blur-2xl bg-linear-180 dark:from-neutral-700/40 dark:to-neutral-800/40 ring dark:ring-white/15 min-w-72"
+            class="flex flex-col items-stretch gap-1.5 isolate top-9 -left-4 absolute px-4 py-2 rounded-xl shadow-lg bg-linear-180 dark:from-neutral-800 dark:to-neutral-900 ring dark:ring-white/15 min-w-72"
         >
             {@render children()}
         </div>

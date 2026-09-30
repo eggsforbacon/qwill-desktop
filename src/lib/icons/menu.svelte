@@ -1,24 +1,18 @@
 <script lang="ts">
-    let { size = 800, className = "" } =
-        $props();
+    let { size = 800, class: className = "" } = $props();
 </script>
 
 <svg
     width={size}
     height={size}
-    viewBox="0 0 24 24"
+    viewBox="0 0 32 32"
     xmlns="http://www.w3.org/2000/svg"
 >
     <path
-        d="M1 12C1 11.4477 1.44772 11 2 11H22C22.5523 11 23 11.4477 23 12C23 12.5523 22.5523 13 22 13H2C1.44772 13 1 12.5523 1 12Z"
-        class="fill-neutral-900! dark:fill-neutral-200! {className}"
-    />
-    <path
-        d="M1 4C1 3.44772 1.44772 3 2 3H22C22.5523 3 23 3.44772 23 4C23 4.55228 22.5523 5 22 5H2C1.44772 5 1 4.55228 1 4Z"
-        class="fill-neutral-900! dark:fill-neutral-200! {className}"
-    />
-    <path
-        d="M1 20C1 19.4477 1.44772 19 2 19H22C22.5523 19 23 19.4477 23 20C23 20.5523 22.5523 21 22 21H2C1.44772 21 1 20.5523 1 20Z"
-        class="fill-neutral-900! dark:fill-neutral-200! {className}"
+        d="M7 22.3333H25.6667M7 15.6667H25.6667M7 9H25.6667"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="stroke-neutral-900! dark:stroke-neutral-200! {className}"
     />
 </svg>

@@ -35,15 +35,23 @@ pub fn set_registered_hotkeys(
 }
 
 #[tauri::command]
-pub fn create_shortcut(
-    command: String,
-    description: String,
-    keys: Vec<String>,
-    label: String,
-    mutable: bool,
-) -> config::shortcuts::Shortcut {
-    let shortcut = config::shortcuts::Shortcut::new(command, keys, label, mutable);
-    shortcut
+pub fn get_os() -> String {
+    #[cfg(target_os = "windows")]
+    {
+        return "windows".to_string();
+    }
+    #[cfg(target_os = "macos")]
+    {
+        return "macos".to_string();
+    }
+    #[cfg(target_os = "linux")]
+    {
+        return "linux".to_string();
+    }
+    #[cfg(target_os = "unknown")]
+    {
+        return "unknown".to_string();
+    }
 }
 
 #[tauri::command]
